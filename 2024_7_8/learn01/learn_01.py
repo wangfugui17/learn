@@ -191,5 +191,5 @@ aliens = [alien_0,alien_1,alien_2]
 
 name_01 = input('请输入名字')
 print(name_01)
-liao
+
 
