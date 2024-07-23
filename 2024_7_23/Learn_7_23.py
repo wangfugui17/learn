@@ -134,9 +134,31 @@ print("{:=^50s}".format('元组'))
 tuple_a = (123,'abc')
 
 print("{:=^50s}".format('字典'))
-dict_a = {"a":'123',1:'abc',"c":456,a:213456978}
+dict_a = {"a":'123',1:'abc',"c":456,c:213456978}
 print(dict_a)
 
+print(dict_a.values())
+print(list(dict_a.values()))
+
+for key in dict_a:
+    print(f'{key}:{dict_a[key]}')
+
+print(dict_a.keys())
+dict_b = {'a':1,'b':2,'c':3}
+max_dict_a = max(dict_b.values())
+print('最大的值：',max_dict_a)
+
+dict_b['a'] = 100
+print(dict_b)
+dict_b['age'] = 50
+print(dict_b)
+del dict_b['age']
+print(dict_b)
+dict_b.clear()
+print(dict_b)
+del dict_b#删除字典
 
 
+print(dict_a.get('a',0))
+print(dict_a)
 
