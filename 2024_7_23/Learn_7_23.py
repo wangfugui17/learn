@@ -162,3 +162,19 @@ del dict_b#删除字典
 print(dict_a.get('a',0))
 print(dict_a)
 
+
+import re
+
+
+
+
+try:
+    with open('../2024_7_24/身份证信息.csv', 'r', encoding='utf-8') as file:
+        try:
+            with open('../2024_7_24/身份证日期信息.txt', 'a', encoding='utf-8') as f:
+                for line in file:
+                    f.write(''.join(re.findall('(19\d{2}-\d{2}-[0123]\d|20\d{2}-\d{2}-[0123]\d) ', line)))
+        except IOError as e:
+            print('写入',e)
+except FileNotFoundError as e:
+    print(e)
