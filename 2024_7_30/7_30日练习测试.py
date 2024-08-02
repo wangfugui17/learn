@@ -182,7 +182,7 @@ class Logout:
     def __init__(self):
         self.logs = []
     def createlog(self,**message):
-
+        pass
 import datetime
 import time
 

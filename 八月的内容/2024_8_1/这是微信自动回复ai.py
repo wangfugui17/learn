@@ -51,6 +51,8 @@ def chat_ai_auto(*a,**b):
 
     else:
         print('对方还没有回复')
+
+chat_ai_auto()
     # return chat_ai_auto()
 def xiaoxiye():
     message_list = d(resourceId="com.tencent.mm:id/j8g").child(resourceId = 'com.tencent.mm:id/cj1')
